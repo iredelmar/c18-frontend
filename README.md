@@ -6,4 +6,5 @@ C18 Frontend Repositorio
 
 - Manuel Perez (Full Stack)
 - Josemaria Naranjo
+- Irene Loaiza
 
