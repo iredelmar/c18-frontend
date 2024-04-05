@@ -1,7 +1,22 @@
+import { useState } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
+import Sidebar from './components/Sidebar';
 
 function App() {
-  return <h1 className="text-4xl font-bold underline bg-black text-white text-wrap top-3 ">Hello world!</h1>;
+  return (
+    <>
+      <BrowserRouter>
+        <div>
+          <div className="flex text-sm">
+            <Sidebar />
+
+            <div className="flex-grow"></div>
+          </div>
+        </div>
+      </BrowserRouter>
+    </>
+  );
 }
 
 export default App;
