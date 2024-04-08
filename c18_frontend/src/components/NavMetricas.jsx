@@ -32,7 +32,7 @@ export default function NavMetricas() {
     }
 
     return(
-        <nav className=" rounded-t-2xl justify-center md:justify-start md:rounded-none h-14 text-[18px] bg-[#9747FF] ">
+        <nav className=" rounded-t-2xl justify-center md:justify-start md:rounded-none h-[52px] text-[18px] bg-[#9747FF] ">
             <section className='flex h-full items-center pl-28 gap-4'>
                 <Dropdown data={data.first.option}/>
                 <Dropdown data={data.second.option}/>

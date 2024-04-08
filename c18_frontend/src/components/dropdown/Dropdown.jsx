@@ -7,8 +7,8 @@ export default function Dropdown(props){
 
     return(
         <div className="dropdown">
-            <button className='flex'>{props.data.title} <img src={arrowDown}/></button>
-            <div className="flex content bg-[#9747FF] py-4 px-6 gap-y-4">
+            <button className='flex'>{props.data.title} <img className='flex pt-0.5 ml-1' src={arrowDown}/></button>
+            <div className="flex content bg-[#9747FF] py-4 px-6  gap-y-4">
                 <a href="#" className='pt-2'>{props.data.sub1}</a>
                 <a href="#" className='pt-2'>{props.data.sub2}</a>
                 <a href="#" className='pt-2'>{props.data.sub3}</a>
