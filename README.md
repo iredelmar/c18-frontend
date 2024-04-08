@@ -1,4 +1,5 @@
-# c18-frontend
+### Miembros del Equipo FrontEnd:
 
-C18 Frontend Repositorio
-Luis Sanchez hlcxpl@gmail.com
+- Manuel Perez (Full Stack)
+- Josemaria Naranjo
+- Luis Sanchez hlcxpl@gmail.com
