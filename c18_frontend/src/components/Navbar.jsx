@@ -4,6 +4,7 @@ import logoIncubadora from '../assets/icons/incubadora-logo.png'
 
 export default function Navbar() {
 
+ 
     return(
         <nav className="flex justify-center rounded-t-2xl  md:justify-start md:rounded-none min-h-18 bg-[#9747FF] ">
             <Link to='/' className='py-2 md:pl-4'>
