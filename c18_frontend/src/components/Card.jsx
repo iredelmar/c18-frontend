@@ -1,5 +1,4 @@
 
-
 const Card = ({ titulo, number }) => {
     return (
         <div className="bg-purple-100 rounded-lg p-2 pb-10 shadow-md text-center w-full">

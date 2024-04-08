@@ -4,9 +4,9 @@ import Charts from '@components/Charts';
 function App() {
 
   return (
-    <div className=''>
+    <>
       <Charts />
-    </div>
+    </>
   )
 }
 
