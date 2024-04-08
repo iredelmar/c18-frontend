@@ -4,7 +4,7 @@ import Charts from '@components/Charts';
 function App() {
 
   return (
-    <div className='' style={{ width: '100vw' }}>
+    <div className=''>
       <Charts />
     </div>
   )

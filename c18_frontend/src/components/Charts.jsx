@@ -23,7 +23,6 @@ const Charts = () => {
                 </div>
             </div>
         </>
-
     )
 }
 

@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+
 
 const Card = ({ titulo, number }) => {
     return (
@@ -12,8 +12,5 @@ const Card = ({ titulo, number }) => {
         </div>
     )
 }
-Card.propTypes = {
-    titulo: PropTypes.string.isRequired, // Espera que `titulo` sea una cadena y es requerida
-    number: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired // Espera que `number` sea una cadena o un número y es requerida
-};
+
 export default Card
