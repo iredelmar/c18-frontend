@@ -1,7 +1,13 @@
 import './App.css';
+import Charts from '@components/Charts';
 
 function App() {
-  return <h1 className="text-4xl font-bold underline bg-black text-white text-wrap top-3 ">Hello world!</h1>;
+
+  return (
+    <>
+      <Charts />
+    </>
+  )
 }
 
 export default App;
