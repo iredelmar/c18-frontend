@@ -1,11 +1,11 @@
-// import Navbar from './components/Navbar';
+import Navbar from './components/Navbar';
 import NavMetricas from './components/NavMetricas';
 
 function App() {
   return (
     <>
-      {/* <Navbar /> */}
-      <NavMetricas />
+      <Navbar />
+      {/* <NavMetricas /> */}
     </>
   )
 }
