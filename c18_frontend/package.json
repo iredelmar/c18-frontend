@@ -10,7 +10,42 @@
     "preview": "vite preview",
     "format": "prettier --write ./src"
   },
+  "authors": [
+    {
+      "name": "Luis Sanchez",
+      "email": "hlcxpl@gmail.com",
+      "url": "https://hlcxpl.github.io/"
+    },
+    {
+      "name": "Sebastian Flores Y.",
+      "email": "berendicto@gmail.com",
+      "url": ""
+    },
+    {
+      "name": "josemaria naranjo",
+      "email": "josemnaranjoc@gmail.com",
+      "url": ""
+    },
+    {
+      "name": "Irene Loaiza",
+      "email": "iloaizabetancourt@gmail.com",
+      "url": ""
+    },
+    {
+      "name": "",
+      "email": "",
+      "url": ""
+    }
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": "20.11.1",
+    "npm": "10.2.4"
+  },
   "dependencies": {
+    "echarts": "^5.5.0",
+    "echarts-for-react": "^3.0.2",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3"

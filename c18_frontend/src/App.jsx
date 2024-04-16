@@ -1,11 +1,11 @@
-import Navbar from './components/Navbar';
-import NavMetricas from './components/NavMetricas';
+import './App.css';
+import Charts from '@components/Charts';
 
 function App() {
+
   return (
     <>
-      <Navbar />
-      {/* <NavMetricas /> */}
+      <Charts />
     </>
   )
 }
