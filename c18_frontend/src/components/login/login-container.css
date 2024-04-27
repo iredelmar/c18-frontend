@@ -3,7 +3,6 @@
   justify-content: center;
   align-items: center;
   min-height: 65vh;
-  padding: 1rem;
 }
 
 .wrapper {
@@ -19,10 +18,11 @@ input[type='email'],
 input[type='password'] {
   width: 100%;
   padding: 0.5rem;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   border: 1px solid #9f7aea;
   background-color: #ede9fe;
   margin-bottom: 1rem;
+  margin-top: 0.8rem;
 }
 
 button {

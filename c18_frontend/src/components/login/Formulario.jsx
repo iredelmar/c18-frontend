@@ -20,7 +20,7 @@ export function Formulario() {
 
       <div>
         <label htmlFor="email" className="text-purple-700">
-          <b>Correo Electrónico:</b>
+          Correo Electrónico:
         </label>
         <br />
         <input
@@ -33,7 +33,7 @@ export function Formulario() {
 
       <div>
         <label htmlFor="password" className="text-purple-700">
-          <b>Ingresa tu contraseña:</b>
+          Ingresa tu contraseña:
         </label>
         <br />
         <input
@@ -54,7 +54,7 @@ export function Formulario() {
         <br />
         <button
           type="submit"
-          className="bg-white text-purple-700 px-4 py-2 rounded-full shadow-md border border-purple-700 transition duration-300 ease-in-out hover:bg-purple-700 hover:text-white hover:border-transparent"
+          className="bg-white text-purple-700 px-4 py-2 rounded-full shadow-md border border-purple-700 transition duration-300 ease-in-out hover:bg-purple-700 hover:text-white hover:border-transparent  "
         >
           <b>INICIAR SESION</b>
         </button>
