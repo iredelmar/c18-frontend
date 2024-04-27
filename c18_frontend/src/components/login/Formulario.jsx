@@ -3,6 +3,8 @@ import { useState } from 'react';
 export function Formulario() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
+  console.log(email);
   console.log(password);
 
   const handleSubmit = (event) => {
@@ -10,12 +12,12 @@ export function Formulario() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col items-center">
-      <h2>INICIAR SESIÓN</h2>
+    <form onSubmit={handleSubmit} className="flex flex-col items-center ">
+      <h2>INICIE SESION</h2>
       <br />
 
       <div>
-        <label htmlFor="email">Correo Electrónico</label>
+        <label htmlFor="email">Correo Electrónico:</label>
         <br />
         <input
           onChange={(event) => setEmail(event.target.value)}
@@ -26,7 +28,7 @@ export function Formulario() {
       </div>
 
       <div>
-        <label htmlFor="password">Ingrese su Contraseña</label>
+        <label htmlFor="password">Ingresa tu contraseña:</label>
         <br />
         <input
           onChange={(event) => setPassword(event.target.value)}
@@ -38,10 +40,17 @@ export function Formulario() {
 
       <div>
         <button type="button" className="text-purple-700">
-          Recupere su contraseña
+          Recupera tu contraseña
         </button>
-        <button type="submit" className="my-2">
-          Iniciar Sesión
+        <br />
+      </div>
+      <div>
+        <br />
+        <button
+          type="submit"
+          className="bg-white text-purple-700 px-4 py-2 rounded-full shadow-md border border-purple-700 transition duration-300 ease-in-out hover:bg-purple-700 hover:text-white hover:border-transparent"
+        >
+          INICIAR SESION
         </button>
       </div>
     </form>
