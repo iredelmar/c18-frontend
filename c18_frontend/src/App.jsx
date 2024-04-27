@@ -1,13 +1,13 @@
 import './App.css';
-import Charts from '@components/Charts';
+
+import Login from './components/login/Login';
 
 function App() {
-
   return (
     <>
-      <Charts />
+      <Login />
     </>
-  )
+  );
 }
 
 export default App;
