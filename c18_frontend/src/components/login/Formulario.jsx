@@ -13,11 +13,15 @@ export function Formulario() {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col items-center ">
-      <h2>INICIE SESION</h2>
+      <h1>
+        <b>INICIE SESION</b>
+      </h1>
       <br />
 
       <div>
-        <label htmlFor="email">Correo Electrónico:</label>
+        <label htmlFor="email" className="text-purple-700">
+          <b>Correo Electrónico:</b>
+        </label>
         <br />
         <input
           onChange={(event) => setEmail(event.target.value)}
@@ -28,7 +32,9 @@ export function Formulario() {
       </div>
 
       <div>
-        <label htmlFor="password">Ingresa tu contraseña:</label>
+        <label htmlFor="password" className="text-purple-700">
+          <b>Ingresa tu contraseña:</b>
+        </label>
         <br />
         <input
           onChange={(event) => setPassword(event.target.value)}
@@ -40,7 +46,7 @@ export function Formulario() {
 
       <div>
         <button type="button" className="text-purple-700">
-          Recupera tu contraseña
+          <b>Recupera tu contraseña</b>
         </button>
         <br />
       </div>
@@ -50,7 +56,7 @@ export function Formulario() {
           type="submit"
           className="bg-white text-purple-700 px-4 py-2 rounded-full shadow-md border border-purple-700 transition duration-300 ease-in-out hover:bg-purple-700 hover:text-white hover:border-transparent"
         >
-          INICIAR SESION
+          <b>INICIAR SESION</b>
         </button>
       </div>
     </form>

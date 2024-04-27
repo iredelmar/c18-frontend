@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
+  min-height: 65vh;
   padding: 1rem;
 }
 
@@ -10,7 +10,7 @@
   padding: 1rem;
 }
 
-.wrapper h2 {
+.wrapper h1 {
   color: rgb(95, 2, 104);
   justify-content: center;
 }
