@@ -1,12 +1,12 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Links } from '../assets/icons/icons';
 import userPhoto from '../assets/icons/userPhoto.svg';
 import dLatamIcon from '../assets/icons/dLatamIcon.svg';
 import incubadoraIcon from '../assets/icons/incubadoraIcon.svg';
-import { Link } from 'react-router-dom';
 import '../components/Sidebar.css';
 
-const Sidebar = () => {
+const Sidebar = ({ setActiveRoute }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleSidebar = () => {
@@ -40,10 +40,11 @@ const Sidebar = () => {
 
       {/* Nav Links */}
       <nav className={isOpen ? ' ml-6 ' : 'm-0'}>
-        {Links.map(({ name, icon }, LinkIndex) => (
+        {Links.map(({ name, icon, route }, LinkIndex) => (
           <Link
-            href={`/${name === 'Dashboard' ? '' : `/${name}`}`}
+            to={route}
             key={LinkIndex}
+            onClick={() => setActiveRoute(route)}
             className={`flex items-center my-4 cursor-pointer hover:bg-violet-700 rounded-md ${
               isOpen ? 'justify-start' : 'justify-center'
             }`}
@@ -76,16 +77,3 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
-
-//  Otra opcion Para desplegar el sidebar al posar el mouse encima
-
-{
-  /* <div
-        className={`bg-purple-800 text-white h-screen border-r-2 border-purple-800 ${
-          isOpen ? 'w-64' : 'w-16'
-        } flex flex-col justify-center`}
-        onMouseEnter={() => setIsOpen(true)}
-        onMouseLeave={() => setIsOpen(false)}
-        style={{ margin: '0', padding: '0', display: 'flex', flexDirection: 'column'  }}
-         */
-}

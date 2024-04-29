@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "nombre": "Maria Suárez",
+    "correo": "maria@email.com",
+    "ultimaConexion": "2024-04-28T10:30:00",
+    "fechaPostulacion": "20/04/2024",
+    "verificacion": "5"
+  },
+  {
+    "id": 2,
+    "nombre": "Juan Pérez",
+    "correo": "juan@email.com",
+    "ultimaConexion": "2024-04-27T08:45:00",
+    "fechaPostulacion": "25/04/2024",
+    "verificacion": "3"
+  },
+  {
+    "id": 3,
+    "nombre": "Emilia Hernández",
+    "correo": "emilia@email.com",
+    "ultimaConexion": "2024-04-20T08:45:00",
+    "fechaPostulacion": "20/04/2024",
+    "verificacion": "1"
+  }
+]

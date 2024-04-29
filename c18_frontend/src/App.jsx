@@ -1,21 +1,29 @@
-import { useState } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import React, { useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Sidebar from './components/Sidebar';
+import MetasUsuario from './components/MetasUsuario';
+import Home from './components/Home';
 
 function App() {
-  return (
-    <>
-      <BrowserRouter>
-        <div>
-          <div className="flex text-sm">
-            <Sidebar />
+  const [activeRoute, setActiveRoute] = useState('/');
 
-            <div className="flex-grow"></div>
-          </div>
+  return (
+    <BrowserRouter>
+      <div className="flex text-sm font-inter">
+        <Sidebar setActiveRoute={setActiveRoute} />
+
+        <div className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            {/* Verifica si la ruta activa coincide con /metas-usuario */}
+            {activeRoute === '/metas-usuario' && (
+              <Route path="/metas-usuario" element={<MetasUsuario />} />
+            )}
+          </Routes>
         </div>
-      </BrowserRouter>
-    </>
+      </div>
+    </BrowserRouter>
   );
 }
 
