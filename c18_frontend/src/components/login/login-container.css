@@ -5,6 +5,11 @@
   min-height: 65vh;
 }
 
+.imagen-formulario {
+  max-width: 700px; /* Puedes ajustar el valor según sea necesario */
+  height: auto;
+}
+
 .wrapper {
   padding: 1rem;
 }
@@ -37,4 +42,10 @@ button {
 
 button:last-child {
   margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .imagen-formulario {
+    display: none;
+  }
 }
