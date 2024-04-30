@@ -1,13 +1,14 @@
 import './App.css';
-import Charts from '@components/Charts';
+import Navbar from './components/Navbar';
+import Login from './components/login/Login';
 
 function App() {
-
   return (
     <>
-      <Charts />
+      <Navbar />
+      <Login />
     </>
-  )
+  );
 }
 
 export default App;
