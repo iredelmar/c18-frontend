@@ -1,0 +1,51 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 65vh;
+}
+
+.imagen-formulario {
+  max-width: 700px; /* Puedes ajustar el valor según sea necesario */
+  height: auto;
+}
+
+.wrapper {
+  padding: 1rem;
+}
+
+.wrapper h1 {
+  color: rgb(95, 2, 104);
+  justify-content: center;
+}
+
+input[type='email'],
+input[type='password'] {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid #9f7aea;
+  background-color: #ede9fe;
+  margin-bottom: 1rem;
+  margin-top: 0.8rem;
+}
+
+button {
+  background-color: #9f7aea;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+button:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .imagen-formulario {
+    display: none;
+  }
+}

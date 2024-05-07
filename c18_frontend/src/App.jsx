@@ -4,11 +4,18 @@ import './App.css';
 import Sidebar from './components/Sidebar';
 import MetasUsuario from './components/MetasUsuario';
 import Home from './components/Home';
+import Navbar from './components/Navbar';
+import Login from './components/login/Login';
+
 
 function App() {
   const [activeRoute, setActiveRoute] = useState('/');
 
   return (
+    <>
+      <Navbar />
+      <Login />
+    </>
     <BrowserRouter>
       <div className="flex text-sm font-inter">
         <Sidebar setActiveRoute={setActiveRoute} />
