@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Sidebar from './components/Sidebar';
+import Navbar from './components/Navbar';
+import Login from './components/login/Login';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           </div>
         </div>
       </BrowserRouter>
+      <Navbar />
+      <Login />
     </>
   );
 }
