@@ -1,5 +1,6 @@
 import React from 'react';
 import usuarios from '../../public/users.json';
+import '../components/MetasUsuario.css';
 
 const MetasUsuario = () => {
   return (
