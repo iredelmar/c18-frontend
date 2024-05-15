@@ -6,10 +6,10 @@ function App() {
     <>
       <BrowserRouter>
         <div>
+            <NavBar/>
             <Login />
         </div>
       </BrowserRouter>
-     
     </>
   );
 
