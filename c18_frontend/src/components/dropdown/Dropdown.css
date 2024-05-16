@@ -1,0 +1,13 @@
+.dropdown a{
+    display: block;
+
+}
+
+.dropdown .content{
+    display: none;
+    position: absolute;   
+}
+
+.dropdown:hover .content{
+    display: block;
+}

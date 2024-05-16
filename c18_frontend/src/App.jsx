@@ -1,22 +1,17 @@
-import { useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import './App.css';
-import Sidebar from './components/Sidebar';
-
+import Login from './components/login/Login';
+import NavBar from './components/navbar/Navbar'
 function App() {
   return (
     <>
       <BrowserRouter>
         <div>
-          <div className="flex text-sm">
-            <Sidebar />
-
-            <div className="flex-grow"></div>
-          </div>
+            <NavBar/>
+            <Login />
         </div>
       </BrowserRouter>
     </>
   );
-}
+
 
 export default App;
